@@ -1,0 +1,368 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+@font-face {
+    font-family: spin-cycle;
+    src: url(Spin-Cycle-OT/spincycle_ot.otf);
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+header{
+    height: 100vh;
+    background-image: url('images/Object.png');
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+header nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 10vh;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+}
+header nav ul{
+    list-style: none;
+    display: flex;
+    gap: 30px
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+main{
+
+}
+.first_section{
+    height: 100%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+
+}
+.get_schooled{
+    height: 60%;
+    gap: 20px !important
+}
+.get_schooled h1{
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 120px;
+    font-weight: bold;
+    color: white
+
+}
+.get_schooled div span{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Source Sans Pro", sans-serif;
+    margin-left: 10px;
+    color: white;
+}
+button{
+    width: 162px;
+    height: 44px;
+   
+    background-color: #C271FF;
+    border: none;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 14px;
+    color: white;
+    border-radius: 22px;
+    cursor: pointer;
+    font-weight: 600;
+}
+.get_schooled, .pros, .pros div div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px
+   
+}
+.pros div{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    margin: 0 auto;
+}
+.pros div div{
+    justify-content: flex-start !important;
+}
+.pros h2{
+    font-size: 32px;
+    font-weight: lighter;
+    font-family: "Source Sans Pro", sans-serif;
+    color: white;
+    padding: 0 0 5px;
+}
+.pros h2 span{
+    color: #C271FF;
+}
+.pros div div img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%
+}
+.pros div div h3{
+    font-size: 18px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: bolder;
+    color: white;
+}
+.pros div div p{
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+.section_2{
+    width: 100%;
+    height: 392px;
+    background-color: #C271FF;
+
+    color: white;
+   
+    font-size: 22px;
+    line-height: 33px;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: normal;
+
+}
+.section_2 .section_2_container{
+    width: 70%;
+    height: 100%;
+    margin: auto;   
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.section_2 .section_2_container div blockquote{
+
+    margin-bottom: 20px;
+}
+.section_2 .section_2_container div img{
+    width: 160px;
+    height: 160px;
+}
+.section_2 .section_2_container div h3{
+    font-family: "Source Sans Pro";
+    font-weight: bold;
+}
+.section_2 .section_2_container div p{
+    font-family: "Source Sans Pro";
+    font-weight: normal;
+    font-style: italic;
+}
+.section_3, .section_4{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100vw;
+    min-height: 500px;
+    gap: 60px;
+    padding: 50px 0
+}
+.section_3 h2{
+    font-size: 32px;
+    font-family: "Source Sans Pro";
+    font-weight: lighter;
+
+}
+.section_3 h2 span{
+    font-weight: bolder;
+    color: #C271FF
+}
+.tutorials, .smile_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.tutorials .tutorial {
+    width: 255px;
+    height: 335px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-family: "Source Sans Pro", sans-serif ;
+}
+.tutorial {
+    position: relative;
+}
+.tutorial::after{
+    content: "";
+    position: absolute;
+    top: 15%;
+    left: 35%;
+    /* transform: translate(-50%, -50%); */
+    width: 64px;
+    height: 64px;
+    background-image: url(images/play.png);
+}
+.tutorial h3{
+    font-size: 16px;
+    font-weight: bold;
+}
+.tutorial p{
+    font-size: 14px;
+    font-weight: normal;
+    color:gray;
+    line-height: 24px;
+}
+.stars{
+    display: flex;
+    gap: 10px;
+}
+.tutorial_maker{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+}
+.tutorial_maker img{
+    width: 30px;
+    height: 30px;
+}
+.tutorial_maker h4, .tutorial_footer p{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 27px;
+    color: #C271FF
+}
+.tutorial_footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+.tutorial_footer{
+    color: #C271FF
+}
+.last_star{
+    color: gray;
+}
+.section_4{
+    background-color: #071629;
+    color: white;
+    justify-content: center !important;
+
+}
+.section_4 h2{
+    font-size: 22px;
+    font-weight: lighter;
+    font-family: "Source Sans Pro", sans-serif;
+}
+.section_4 h2 span{
+    color: #C271FF;
+    font-weight: bold;
+}
+.smile_container div{
+    width: 257px;
+    height: 153px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+.smile_container div img{
+    width: 43px;
+    height: 35px;
+}
+.smile_container div h3{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 26px;
+    font-family: "Source Sans Pro", sans-serif ;
+}
+.section_5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 50px 0;
+
+}
+.section_5 h2{
+    font-family: "Source Sans Pro", sans-serif ;
+    font-size: 60px;
+    font-weight: lighter;
+    margin-bottom: 20px
+}
+.section_5 .faq{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 150px;
+    row-gap: 40px;
+    width: 70%;
+}
+.faq div{
+    display: flex;
+    flex-direction: column;
+    gap: 30px
+}
+.faq div h3{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Source Sans Pro", sans-serif ;
+}
+.faq div p{
+    font-family:  "Source Sans Pro", sans-serif ;
+    font-size: 14px;
+    line-height: 24px;
+    color: gray;
+}
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #071629;
+    height: 250px;
+    color: white
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 200px;
+    width: 90%
+}
+.footer_social_media{
+    width: 100px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer_social_media i{
+    background-color: white;
+    color: #071629;
+    padding: 4px;
+    border-radius: 50%
+}
+footer p{
+    margin-bottom: 20px;
+}
